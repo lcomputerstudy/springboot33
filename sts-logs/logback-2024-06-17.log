@@ -1,0 +1,462 @@
+11:22:56.359 TRACE --- [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.e.d.c.TestController:
+	{ [/form]}: beforeSignup()
+	{ [/login]}: beforeLogin(Model)
+	{POST [/signup]}: signup(User)
+	{ [/admin]}: admin(Model)
+	{ [/denied]}: denied(Model)
+	{ [/list]}: list(Model)
+	{ [/user/info]}: userInfo(Model)
+	{ [/]}: home() 
+11:22:56.363 TRACE --- [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ [/error]}: error(HttpServletRequest) 
+11:22:56.364 DEBUG --- [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping' 
+11:22:56.368 DEBUG --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping : Detected 0 mappings in 'beanNameHandlerMapping' 
+11:22:56.389 TRACE --- [restartedMain] o.s.w.s.f.s.RouterFunctionMapping : 0 RouterFunction(s) in 'routerFunctionMapping' 
+11:22:56.393 TRACE --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]] 
+11:22:56.394 TRACE --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping : Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]] 
+11:22:56.394 DEBUG --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**] in 'resourceHandlerMapping' 
+11:22:56.441 DEBUG --- [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice 
+11:22:56.457 DEBUG --- [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice 
+11:23:45.204 ERROR --- [http-nio-8080-exec-2] c.e.demo.controller.TestController : error 
+11:23:49.029 ERROR --- [http-nio-8080-exec-6] c.e.demo.controller.TestController : error 
+11:23:59.594 ERROR --- [http-nio-8080-exec-9] c.e.demo.controller.TestController : error 
+11:24:10.004 DEBUG --- [http-nio-8080-exec-5] c.e.demo.mapper.UserMapper.readUser : ==>  Preparing: SELECT u_id as username, u_password as password, u_name as uName, u_isAccountNonExpired as isAccountNonExpired, u_isAccountNonLocked as isAccountNonLocked, u_isCredentialNonExpired as isCredentialsNonExpired, u_isEnabled as isEnabled FROM lc_user WHERE 1=1 AND u_id = ? 
+11:24:10.014 DEBUG --- [http-nio-8080-exec-5] c.e.demo.mapper.UserMapper.readUser : ==> Parameters: abcd(String) 
+11:24:10.023 TRACE --- [http-nio-8080-exec-5] c.e.demo.mapper.UserMapper.readUser : <==    Columns: username, password, uName, isAccountNonExpired, isAccountNonLocked, isCredentialsNonExpired, isEnabled 
+11:24:10.023 TRACE --- [http-nio-8080-exec-5] c.e.demo.mapper.UserMapper.readUser : <==        Row: abcd, $2a$10$1bJUU7ubm3p69ilxXJLrb.rJUO93KCb7zk5SIr.vFqW.mr3HOBJ2q, abcd, 1, 1, 1, 1 
+11:24:10.025 DEBUG --- [http-nio-8080-exec-5] c.e.demo.mapper.UserMapper.readUser : <==      Total: 1 
+11:24:10.028 DEBUG --- [http-nio-8080-exec-5] c.e.d.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+11:24:10.028 DEBUG --- [http-nio-8080-exec-5] c.e.d.m.UserMapper.readAuthorities : ==> Parameters: abcd(String) 
+11:24:10.028 TRACE --- [http-nio-8080-exec-5] c.e.d.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+11:24:10.028 TRACE --- [http-nio-8080-exec-5] c.e.d.m.UserMapper.readAuthorities : <==        Row: ROLE_ADMIN 
+11:24:10.029 TRACE --- [http-nio-8080-exec-5] c.e.d.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+11:24:10.029 DEBUG --- [http-nio-8080-exec-5] c.e.d.m.UserMapper.readAuthorities : <==      Total: 2 
+11:24:10.123 ERROR --- [http-nio-8080-exec-6] c.e.demo.controller.TestController : error 
+11:25:21.849 INFO  --- [restartedMain] com.example.demo.DemoApplication : Starting DemoApplication using Java 22.0.1 with PID 6828 (/Users/rngooqw/Documents/ij/demo/build/classes/java/main started by rngooqw in /Users/rngooqw/Documents/ij/demo) 
+11:25:21.850 DEBUG --- [restartedMain] com.example.demo.DemoApplication : Running with Spring Boot v3.3.0, Spring v6.1.8 
+11:25:21.850 INFO  --- [restartedMain] com.example.demo.DemoApplication : No active profile set, falling back to 1 default profile: "default" 
+11:25:22.759 INFO  --- [restartedMain] com.example.demo.DemoApplication : Started DemoApplication in 1.145 seconds (process running for 1.348) 
+11:25:25.283 INFO  --- [restartedMain] com.example.demo.DemoApplication : Starting DemoApplication using Java 22.0.1 with PID 6828 (/Users/rngooqw/Documents/ij/demo/build/classes/java/main started by rngooqw in /Users/rngooqw/Documents/ij/demo) 
+11:25:25.284 DEBUG --- [restartedMain] com.example.demo.DemoApplication : Running with Spring Boot v3.3.0, Spring v6.1.8 
+11:25:25.284 INFO  --- [restartedMain] com.example.demo.DemoApplication : No active profile set, falling back to 1 default profile: "default" 
+11:25:25.529 INFO  --- [restartedMain] com.example.demo.DemoApplication : Started DemoApplication in 0.299 seconds (process running for 4.118) 
+11:25:28.642 DEBUG --- [http-nio-8080-exec-2] c.e.demo.controller.TestController : debug 
+11:25:28.642 INFO  --- [http-nio-8080-exec-2] c.e.demo.controller.TestController : info 
+11:25:39.800 DEBUG --- [http-nio-8080-exec-5] c.e.demo.controller.TestController : debug 
+11:25:39.802 INFO  --- [http-nio-8080-exec-5] c.e.demo.controller.TestController : info 
+11:27:00.191 INFO  --- [restartedMain] com.example.demo.DemoApplication : Starting DemoApplication using Java 22.0.1 with PID 6952 (/Users/rngooqw/Documents/ij/demo/build/classes/java/main started by rngooqw in /Users/rngooqw/Documents/ij/demo) 
+11:27:00.192 DEBUG --- [restartedMain] com.example.demo.DemoApplication : Running with Spring Boot v3.3.0, Spring v6.1.8 
+11:27:00.192 INFO  --- [restartedMain] com.example.demo.DemoApplication : No active profile set, falling back to 1 default profile: "default" 
+11:27:01.074 INFO  --- [restartedMain] com.example.demo.DemoApplication : Started DemoApplication in 1.126 seconds (process running for 1.308) 
+11:27:05.842 DEBUG --- [http-nio-8080-exec-3] c.e.demo.controller.TestController : debug 
+11:27:05.842 INFO  --- [http-nio-8080-exec-3] c.e.demo.controller.TestController : info 
+11:27:08.088 DEBUG --- [http-nio-8080-exec-4] c.e.demo.controller.TestController : debug 
+11:27:08.089 INFO  --- [http-nio-8080-exec-4] c.e.demo.controller.TestController : info 
+11:27:29.192 INFO  --- [restartedMain] com.example.demo.DemoApplication : Starting DemoApplication using Java 22.0.1 with PID 6992 (/Users/rngooqw/Documents/ij/demo/build/classes/java/main started by rngooqw in /Users/rngooqw/Documents/ij/demo) 
+11:27:29.192 DEBUG --- [restartedMain] com.example.demo.DemoApplication : Running with Spring Boot v3.3.0, Spring v6.1.8 
+11:27:29.192 INFO  --- [restartedMain] com.example.demo.DemoApplication : No active profile set, falling back to 1 default profile: "default" 
+11:27:30.078 INFO  --- [restartedMain] com.example.demo.DemoApplication : Started DemoApplication in 1.147 seconds (process running for 1.319) 
+11:27:40.642 INFO  --- [restartedMain] com.example.demo.DemoApplication : Starting DemoApplication using Java 22.0.1 with PID 6992 (/Users/rngooqw/Documents/ij/demo/build/classes/java/main started by rngooqw in /Users/rngooqw/Documents/ij/demo) 
+11:27:40.642 DEBUG --- [restartedMain] com.example.demo.DemoApplication : Running with Spring Boot v3.3.0, Spring v6.1.8 
+11:27:40.642 INFO  --- [restartedMain] com.example.demo.DemoApplication : No active profile set, falling back to 1 default profile: "default" 
+11:27:40.868 INFO  --- [restartedMain] com.example.demo.DemoApplication : Started DemoApplication in 0.242 seconds (process running for 12.11) 
+11:27:49.821 INFO  --- [restartedMain] com.example.demo.DemoApplication : Starting DemoApplication using Java 22.0.1 with PID 6992 (/Users/rngooqw/Documents/ij/demo/build/classes/java/main started by rngooqw in /Users/rngooqw/Documents/ij/demo) 
+11:27:49.821 DEBUG --- [restartedMain] com.example.demo.DemoApplication : Running with Spring Boot v3.3.0, Spring v6.1.8 
+11:27:49.822 INFO  --- [restartedMain] com.example.demo.DemoApplication : No active profile set, falling back to 1 default profile: "default" 
+11:27:50.027 INFO  --- [restartedMain] com.example.demo.DemoApplication : Started DemoApplication in 0.222 seconds (process running for 21.269) 
+11:28:02.614 INFO  --- [restartedMain] com.example.demo.DemoApplication : Starting DemoApplication using Java 22.0.1 with PID 6992 (/Users/rngooqw/Documents/ij/demo/build/classes/java/main started by rngooqw in /Users/rngooqw/Documents/ij/demo) 
+11:28:02.614 DEBUG --- [restartedMain] com.example.demo.DemoApplication : Running with Spring Boot v3.3.0, Spring v6.1.8 
+11:28:02.614 INFO  --- [restartedMain] com.example.demo.DemoApplication : No active profile set, falling back to 1 default profile: "default" 
+11:28:02.808 INFO  --- [restartedMain] com.example.demo.DemoApplication : Started DemoApplication in 0.211 seconds (process running for 34.05) 
+11:28:07.158 DEBUG --- [http-nio-8080-exec-1] c.e.demo.controller.TestController : 디버그입니다. 
+11:28:07.158 INFO  --- [http-nio-8080-exec-1] c.e.demo.controller.TestController : 인포입니다. 
+11:28:22.305 INFO  --- [restartedMain] com.example.demo.DemoApplication : Starting DemoApplication using Java 22.0.1 with PID 7064 (/Users/rngooqw/Documents/ij/demo/build/classes/java/main started by rngooqw in /Users/rngooqw/Documents/ij/demo) 
+11:28:22.305 DEBUG --- [restartedMain] com.example.demo.DemoApplication : Running with Spring Boot v3.3.0, Spring v6.1.8 
+11:28:22.305 INFO  --- [restartedMain] com.example.demo.DemoApplication : No active profile set, falling back to 1 default profile: "default" 
+11:28:23.174 INFO  --- [restartedMain] com.example.demo.DemoApplication : Started DemoApplication in 1.099 seconds (process running for 1.259) 
+11:28:25.655 INFO  --- [restartedMain] com.example.demo.DemoApplication : Starting DemoApplication using Java 22.0.1 with PID 7064 (/Users/rngooqw/Documents/ij/demo/build/classes/java/main started by rngooqw in /Users/rngooqw/Documents/ij/demo) 
+11:28:25.656 DEBUG --- [restartedMain] com.example.demo.DemoApplication : Running with Spring Boot v3.3.0, Spring v6.1.8 
+11:28:25.656 INFO  --- [restartedMain] com.example.demo.DemoApplication : No active profile set, falling back to 1 default profile: "default" 
+11:28:25.870 INFO  --- [restartedMain] com.example.demo.DemoApplication : Started DemoApplication in 0.235 seconds (process running for 3.955) 
+11:28:34.603 DEBUG --- [http-nio-8080-exec-4] c.e.d.mapper.UserMapper.createUser : ==>  Preparing: INSERT INTO lc_user ( u_id, u_password, u_name, u_isAccountNonExpired, u_isAccountNonLocked, u_isCredentialNonExpired, u_isEnabled ) VALUES ( ?, ?, ?, ?, ?, ?, ? ) 
+11:28:34.613 DEBUG --- [http-nio-8080-exec-4] c.e.d.mapper.UserMapper.createUser : ==> Parameters: d(String), $2a$10$OuLOO9HhZrJkkcm.mUBQwuaQMhs.sILyclDguPnbhPcLSNDAy8fkm(String), 디디디(String), true(Boolean), true(Boolean), true(Boolean), true(Boolean) 
+11:28:34.621 DEBUG --- [http-nio-8080-exec-4] c.e.d.mapper.UserMapper.createUser : <==    Updates: 1 
+11:28:34.628 DEBUG --- [http-nio-8080-exec-4] c.e.d.m.UserMapper.createAuthority : ==>  Preparing: INSERT INTO lc_auth ( u_id, u_auth ) VALUES (?, ?) ON DUPLICATE KEY UPDATE u_id = ? 
+11:28:34.629 DEBUG --- [http-nio-8080-exec-4] c.e.d.m.UserMapper.createAuthority : ==> Parameters: d(String), ROLE_USER(String), d(String) 
+11:28:34.630 DEBUG --- [http-nio-8080-exec-4] c.e.d.m.UserMapper.createAuthority : <==    Updates: 1 
+11:28:38.434 DEBUG --- [http-nio-8080-exec-7] c.e.demo.mapper.UserMapper.readUser : ==>  Preparing: SELECT u_id as username, u_password as password, u_name as uName, u_isAccountNonExpired as isAccountNonExpired, u_isAccountNonLocked as isAccountNonLocked, u_isCredentialNonExpired as isCredentialsNonExpired, u_isEnabled as isEnabled FROM lc_user WHERE 1=1 AND u_id = ? 
+11:28:38.434 DEBUG --- [http-nio-8080-exec-7] c.e.demo.mapper.UserMapper.readUser : ==> Parameters: d(String) 
+11:28:38.442 TRACE --- [http-nio-8080-exec-7] c.e.demo.mapper.UserMapper.readUser : <==    Columns: username, password, uName, isAccountNonExpired, isAccountNonLocked, isCredentialsNonExpired, isEnabled 
+11:28:38.443 TRACE --- [http-nio-8080-exec-7] c.e.demo.mapper.UserMapper.readUser : <==        Row: d, $2a$10$OuLOO9HhZrJkkcm.mUBQwuaQMhs.sILyclDguPnbhPcLSNDAy8fkm, 디디디, 1, 1, 1, 1 
+11:28:38.444 DEBUG --- [http-nio-8080-exec-7] c.e.demo.mapper.UserMapper.readUser : <==      Total: 1 
+11:28:38.446 DEBUG --- [http-nio-8080-exec-7] c.e.d.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+11:28:38.447 DEBUG --- [http-nio-8080-exec-7] c.e.d.m.UserMapper.readAuthorities : ==> Parameters: d(String) 
+11:28:38.447 TRACE --- [http-nio-8080-exec-7] c.e.d.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+11:28:38.447 TRACE --- [http-nio-8080-exec-7] c.e.d.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+11:28:38.448 DEBUG --- [http-nio-8080-exec-7] c.e.d.m.UserMapper.readAuthorities : <==      Total: 1 
+11:28:38.546 DEBUG --- [http-nio-8080-exec-8] c.e.demo.controller.TestController : 디버그입니다. 
+11:28:38.546 INFO  --- [http-nio-8080-exec-8] c.e.demo.controller.TestController : 인포입니다. 
+11:28:43.357 DEBUG --- [http-nio-8080-exec-2] c.e.demo.controller.TestController : 디버그입니다. 
+11:28:43.358 INFO  --- [http-nio-8080-exec-2] c.e.demo.controller.TestController : 인포입니다. 
+11:28:45.542 DEBUG --- [http-nio-8080-exec-4] c.e.demo.controller.TestController : 디버그입니다. 
+11:28:45.542 INFO  --- [http-nio-8080-exec-4] c.e.demo.controller.TestController : 인포입니다. 
+11:29:47.749 INFO  --- [restartedMain] com.example.demo.DemoApplication : Starting DemoApplication using Java 22.0.1 with PID 7202 (/Users/rngooqw/Documents/ij/demo/build/classes/java/main started by rngooqw in /Users/rngooqw/Documents/ij/demo) 
+11:29:47.749 DEBUG --- [restartedMain] com.example.demo.DemoApplication : Running with Spring Boot v3.3.0, Spring v6.1.8 
+11:29:47.750 INFO  --- [restartedMain] com.example.demo.DemoApplication : No active profile set, falling back to 1 default profile: "default" 
+11:29:48.649 INFO  --- [restartedMain] com.example.demo.DemoApplication : Started DemoApplication in 1.128 seconds (process running for 1.327) 
+11:29:50.098 DEBUG --- [http-nio-8080-exec-2] c.e.demo.controller.TestController : 디버그입니다. 
+11:29:50.098 INFO  --- [http-nio-8080-exec-2] c.e.demo.controller.TestController : 인포입니다. 
+11:29:54.164 INFO  --- [restartedMain] com.example.demo.DemoApplication : Starting DemoApplication using Java 22.0.1 with PID 7202 (/Users/rngooqw/Documents/ij/demo/build/classes/java/main started by rngooqw in /Users/rngooqw/Documents/ij/demo) 
+11:29:54.164 DEBUG --- [restartedMain] com.example.demo.DemoApplication : Running with Spring Boot v3.3.0, Spring v6.1.8 
+11:29:54.165 INFO  --- [restartedMain] com.example.demo.DemoApplication : No active profile set, falling back to 1 default profile: "default" 
+11:29:54.381 INFO  --- [restartedMain] com.example.demo.DemoApplication : Started DemoApplication in 0.233 seconds (process running for 7.059) 
+11:30:00.132 DEBUG --- [http-nio-8080-exec-1] c.e.d.mapper.UserMapper.createUser : ==>  Preparing: INSERT INTO lc_user ( u_id, u_password, u_name, u_isAccountNonExpired, u_isAccountNonLocked, u_isCredentialNonExpired, u_isEnabled ) VALUES ( ?, ?, ?, ?, ?, ?, ? ) 
+11:30:00.142 DEBUG --- [http-nio-8080-exec-1] c.e.d.mapper.UserMapper.createUser : ==> Parameters: eee(String), $2a$10$M5e9Js7LUVicDvEkoW.7ueXOymu.7Dymu05FLxiCozUqZOrBEc81O(String), 이이이(String), true(Boolean), true(Boolean), true(Boolean), true(Boolean) 
+11:30:00.145 DEBUG --- [http-nio-8080-exec-1] c.e.d.mapper.UserMapper.createUser : <==    Updates: 1 
+11:30:00.152 DEBUG --- [http-nio-8080-exec-1] c.e.d.m.UserMapper.createAuthority : ==>  Preparing: INSERT INTO lc_auth ( u_id, u_auth ) VALUES (?, ?) ON DUPLICATE KEY UPDATE u_id = ? 
+11:30:00.152 DEBUG --- [http-nio-8080-exec-1] c.e.d.m.UserMapper.createAuthority : ==> Parameters: eee(String), ROLE_USER(String), eee(String) 
+11:30:00.153 DEBUG --- [http-nio-8080-exec-1] c.e.d.m.UserMapper.createAuthority : <==    Updates: 1 
+11:30:04.377 DEBUG --- [http-nio-8080-exec-4] c.e.demo.mapper.UserMapper.readUser : ==>  Preparing: SELECT u_id as username, u_password as password, u_name as uName, u_isAccountNonExpired as isAccountNonExpired, u_isAccountNonLocked as isAccountNonLocked, u_isCredentialNonExpired as isCredentialsNonExpired, u_isEnabled as isEnabled FROM lc_user WHERE 1=1 AND u_id = ? 
+11:30:04.377 DEBUG --- [http-nio-8080-exec-4] c.e.demo.mapper.UserMapper.readUser : ==> Parameters: ㅁㄴㅇㄹ(String) 
+11:30:04.397 DEBUG --- [http-nio-8080-exec-4] c.e.demo.mapper.UserMapper.readUser : <==      Total: 0 
+11:30:04.400 DEBUG --- [http-nio-8080-exec-4] c.e.d.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+11:30:04.401 DEBUG --- [http-nio-8080-exec-4] c.e.d.m.UserMapper.readAuthorities : ==> Parameters: ㅁㄴㅇㄹ(String) 
+11:30:04.402 DEBUG --- [http-nio-8080-exec-4] c.e.d.m.UserMapper.readAuthorities : <==      Total: 0 
+11:30:04.402 ERROR --- [http-nio-8080-exec-4] o.s.s.w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user. 
+org.springframework.security.authentication.InternalAuthenticationServiceException: Cannot invoke "com.example.demo.domain.User.setAuthorities(java.util.Collection)" because "user" is null
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:122)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:133)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:201)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:85)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:231)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.example.demo.domain.User.setAuthorities(java.util.Collection)" because "user" is null
+	at com.example.demo.service.UserServiceImpl.loadUserByUsername(UserServiceImpl.java:22)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:107)
+	... 65 common frames omitted
+11:30:09.950 DEBUG --- [http-nio-8080-exec-8] c.e.demo.mapper.UserMapper.readUser : ==>  Preparing: SELECT u_id as username, u_password as password, u_name as uName, u_isAccountNonExpired as isAccountNonExpired, u_isAccountNonLocked as isAccountNonLocked, u_isCredentialNonExpired as isCredentialsNonExpired, u_isEnabled as isEnabled FROM lc_user WHERE 1=1 AND u_id = ? 
+11:30:09.951 DEBUG --- [http-nio-8080-exec-8] c.e.demo.mapper.UserMapper.readUser : ==> Parameters: eee(String) 
+11:30:09.954 TRACE --- [http-nio-8080-exec-8] c.e.demo.mapper.UserMapper.readUser : <==    Columns: username, password, uName, isAccountNonExpired, isAccountNonLocked, isCredentialsNonExpired, isEnabled 
+11:30:09.955 TRACE --- [http-nio-8080-exec-8] c.e.demo.mapper.UserMapper.readUser : <==        Row: eee, $2a$10$M5e9Js7LUVicDvEkoW.7ueXOymu.7Dymu05FLxiCozUqZOrBEc81O, 이이이, 1, 1, 1, 1 
+11:30:09.962 DEBUG --- [http-nio-8080-exec-8] c.e.demo.mapper.UserMapper.readUser : <==      Total: 1 
+11:30:09.962 DEBUG --- [http-nio-8080-exec-8] c.e.d.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+11:30:09.963 DEBUG --- [http-nio-8080-exec-8] c.e.d.m.UserMapper.readAuthorities : ==> Parameters: eee(String) 
+11:30:09.964 TRACE --- [http-nio-8080-exec-8] c.e.d.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+11:30:09.964 TRACE --- [http-nio-8080-exec-8] c.e.d.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+11:30:09.965 DEBUG --- [http-nio-8080-exec-8] c.e.d.m.UserMapper.readAuthorities : <==      Total: 1 
+11:30:10.098 DEBUG --- [http-nio-8080-exec-9] c.e.demo.controller.TestController : 디버그입니다. 
+11:30:10.099 INFO  --- [http-nio-8080-exec-9] c.e.demo.controller.TestController : 인포입니다. 
+11:30:13.805 DEBUG --- [http-nio-8080-exec-2] c.e.demo.controller.TestController : 디버그입니다. 
+11:30:13.805 INFO  --- [http-nio-8080-exec-2] c.e.demo.controller.TestController : 인포입니다. 
+11:30:15.473 DEBUG --- [http-nio-8080-exec-5] c.e.demo.controller.TestController : 디버그입니다. 
+11:30:15.473 INFO  --- [http-nio-8080-exec-5] c.e.demo.controller.TestController : 인포입니다. 
+11:30:16.341 DEBUG --- [http-nio-8080-exec-9] c.e.demo.controller.TestController : 디버그입니다. 
+11:30:16.342 INFO  --- [http-nio-8080-exec-9] c.e.demo.controller.TestController : 인포입니다. 
+11:30:20.141 DEBUG --- [http-nio-8080-exec-1] c.e.demo.mapper.UserMapper.readUser : ==>  Preparing: SELECT u_id as username, u_password as password, u_name as uName, u_isAccountNonExpired as isAccountNonExpired, u_isAccountNonLocked as isAccountNonLocked, u_isCredentialNonExpired as isCredentialsNonExpired, u_isEnabled as isEnabled FROM lc_user WHERE 1=1 AND u_id = ? 
+11:30:20.141 DEBUG --- [http-nio-8080-exec-1] c.e.demo.mapper.UserMapper.readUser : ==> Parameters: abcd(String) 
+11:30:20.144 TRACE --- [http-nio-8080-exec-1] c.e.demo.mapper.UserMapper.readUser : <==    Columns: username, password, uName, isAccountNonExpired, isAccountNonLocked, isCredentialsNonExpired, isEnabled 
+11:30:20.144 TRACE --- [http-nio-8080-exec-1] c.e.demo.mapper.UserMapper.readUser : <==        Row: abcd, $2a$10$1bJUU7ubm3p69ilxXJLrb.rJUO93KCb7zk5SIr.vFqW.mr3HOBJ2q, abcd, 1, 1, 1, 1 
+11:30:20.145 DEBUG --- [http-nio-8080-exec-1] c.e.demo.mapper.UserMapper.readUser : <==      Total: 1 
+11:30:20.145 DEBUG --- [http-nio-8080-exec-1] c.e.d.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+11:30:20.145 DEBUG --- [http-nio-8080-exec-1] c.e.d.m.UserMapper.readAuthorities : ==> Parameters: abcd(String) 
+11:30:20.146 TRACE --- [http-nio-8080-exec-1] c.e.d.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+11:30:20.146 TRACE --- [http-nio-8080-exec-1] c.e.d.m.UserMapper.readAuthorities : <==        Row: ROLE_ADMIN 
+11:30:20.146 TRACE --- [http-nio-8080-exec-1] c.e.d.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+11:30:20.146 DEBUG --- [http-nio-8080-exec-1] c.e.d.m.UserMapper.readAuthorities : <==      Total: 2 
+11:30:20.283 DEBUG --- [http-nio-8080-exec-3] c.e.demo.controller.TestController : 디버그입니다. 
+11:30:20.283 INFO  --- [http-nio-8080-exec-3] c.e.demo.controller.TestController : 인포입니다. 
+11:30:25.150 DEBUG --- [http-nio-8080-exec-6] c.e.demo.controller.TestController : 디버그입니다. 
+11:30:25.151 INFO  --- [http-nio-8080-exec-6] c.e.demo.controller.TestController : 인포입니다. 
+11:30:57.464 DEBUG --- [http-nio-8080-exec-10] c.e.demo.controller.TestController : 디버그입니다. 
+11:30:57.465 INFO  --- [http-nio-8080-exec-10] c.e.demo.controller.TestController : 인포입니다. 
+11:31:02.050 DEBUG --- [http-nio-8080-exec-2] c.e.demo.mapper.UserMapper.readUser : ==>  Preparing: SELECT u_id as username, u_password as password, u_name as uName, u_isAccountNonExpired as isAccountNonExpired, u_isAccountNonLocked as isAccountNonLocked, u_isCredentialNonExpired as isCredentialsNonExpired, u_isEnabled as isEnabled FROM lc_user WHERE 1=1 AND u_id = ? 
+11:31:02.051 DEBUG --- [http-nio-8080-exec-2] c.e.demo.mapper.UserMapper.readUser : ==> Parameters: asdf(String) 
+11:31:02.053 DEBUG --- [http-nio-8080-exec-2] c.e.demo.mapper.UserMapper.readUser : <==      Total: 0 
+11:31:02.053 DEBUG --- [http-nio-8080-exec-2] c.e.d.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+11:31:02.054 DEBUG --- [http-nio-8080-exec-2] c.e.d.m.UserMapper.readAuthorities : ==> Parameters: asdf(String) 
+11:31:02.055 DEBUG --- [http-nio-8080-exec-2] c.e.d.m.UserMapper.readAuthorities : <==      Total: 0 
+11:31:02.055 ERROR --- [http-nio-8080-exec-2] o.s.s.w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user. 
+org.springframework.security.authentication.InternalAuthenticationServiceException: Cannot invoke "com.example.demo.domain.User.setAuthorities(java.util.Collection)" because "user" is null
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:122)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:133)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:201)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:85)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:231)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.example.demo.domain.User.setAuthorities(java.util.Collection)" because "user" is null
+	at com.example.demo.service.UserServiceImpl.loadUserByUsername(UserServiceImpl.java:22)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:107)
+	... 65 common frames omitted
+11:31:10.223 DEBUG --- [http-nio-8080-exec-8] c.e.demo.mapper.UserMapper.readUser : ==>  Preparing: SELECT u_id as username, u_password as password, u_name as uName, u_isAccountNonExpired as isAccountNonExpired, u_isAccountNonLocked as isAccountNonLocked, u_isCredentialNonExpired as isCredentialsNonExpired, u_isEnabled as isEnabled FROM lc_user WHERE 1=1 AND u_id = ? 
+11:31:10.223 DEBUG --- [http-nio-8080-exec-8] c.e.demo.mapper.UserMapper.readUser : ==> Parameters: eee(String) 
+11:31:10.224 TRACE --- [http-nio-8080-exec-8] c.e.demo.mapper.UserMapper.readUser : <==    Columns: username, password, uName, isAccountNonExpired, isAccountNonLocked, isCredentialsNonExpired, isEnabled 
+11:31:10.225 TRACE --- [http-nio-8080-exec-8] c.e.demo.mapper.UserMapper.readUser : <==        Row: eee, $2a$10$M5e9Js7LUVicDvEkoW.7ueXOymu.7Dymu05FLxiCozUqZOrBEc81O, 이이이, 1, 1, 1, 1 
+11:31:10.225 DEBUG --- [http-nio-8080-exec-8] c.e.demo.mapper.UserMapper.readUser : <==      Total: 1 
+11:31:10.226 DEBUG --- [http-nio-8080-exec-8] c.e.d.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+11:31:10.226 DEBUG --- [http-nio-8080-exec-8] c.e.d.m.UserMapper.readAuthorities : ==> Parameters: eee(String) 
+11:31:10.227 TRACE --- [http-nio-8080-exec-8] c.e.d.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+11:31:10.227 TRACE --- [http-nio-8080-exec-8] c.e.d.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+11:31:10.227 DEBUG --- [http-nio-8080-exec-8] c.e.d.m.UserMapper.readAuthorities : <==      Total: 1 
+11:31:10.365 DEBUG --- [http-nio-8080-exec-9] c.e.demo.controller.TestController : 디버그입니다. 
+11:31:10.365 INFO  --- [http-nio-8080-exec-9] c.e.demo.controller.TestController : 인포입니다. 
+11:32:14.590 INFO  --- [restartedMain] com.example.demo.DemoApplication : Starting DemoApplication using Java 22.0.1 with PID 7373 (/Users/rngooqw/Documents/ij/demo/build/classes/java/main started by rngooqw in /Users/rngooqw/Documents/ij/demo) 
+11:32:14.591 DEBUG --- [restartedMain] com.example.demo.DemoApplication : Running with Spring Boot v3.3.0, Spring v6.1.8 
+11:32:14.591 INFO  --- [restartedMain] com.example.demo.DemoApplication : No active profile set, falling back to 1 default profile: "default" 
+11:32:15.506 INFO  --- [restartedMain] com.example.demo.DemoApplication : Started DemoApplication in 1.149 seconds (process running for 1.318) 
+11:32:24.665 DEBUG --- [http-nio-8080-exec-2] c.e.demo.controller.TestController : 디버그입니다. 
+11:32:24.665 INFO  --- [http-nio-8080-exec-2] c.e.demo.controller.TestController : 인포입니다. 
+11:32:28.239 DEBUG --- [http-nio-8080-exec-3] c.e.demo.controller.TestController : 디버그입니다. 
+11:32:28.239 INFO  --- [http-nio-8080-exec-3] c.e.demo.controller.TestController : 인포입니다. 
+11:32:37.209 DEBUG --- [http-nio-8080-exec-5] c.e.demo.mapper.UserMapper.readUser : ==>  Preparing: SELECT u_id as username, u_password as password, u_name as uName, u_isAccountNonExpired as isAccountNonExpired, u_isAccountNonLocked as isAccountNonLocked, u_isCredentialNonExpired as isCredentialsNonExpired, u_isEnabled as isEnabled FROM lc_user WHERE 1=1 AND u_id = ? 
+11:32:37.221 DEBUG --- [http-nio-8080-exec-5] c.e.demo.mapper.UserMapper.readUser : ==> Parameters: abcd(String) 
+11:32:37.230 TRACE --- [http-nio-8080-exec-5] c.e.demo.mapper.UserMapper.readUser : <==    Columns: username, password, uName, isAccountNonExpired, isAccountNonLocked, isCredentialsNonExpired, isEnabled 
+11:32:37.230 TRACE --- [http-nio-8080-exec-5] c.e.demo.mapper.UserMapper.readUser : <==        Row: abcd, $2a$10$1bJUU7ubm3p69ilxXJLrb.rJUO93KCb7zk5SIr.vFqW.mr3HOBJ2q, abcd, 1, 1, 1, 1 
+11:32:37.231 DEBUG --- [http-nio-8080-exec-5] c.e.demo.mapper.UserMapper.readUser : <==      Total: 1 
+11:32:37.234 DEBUG --- [http-nio-8080-exec-5] c.e.d.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+11:32:37.234 DEBUG --- [http-nio-8080-exec-5] c.e.d.m.UserMapper.readAuthorities : ==> Parameters: abcd(String) 
+11:32:37.235 TRACE --- [http-nio-8080-exec-5] c.e.d.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+11:32:37.235 TRACE --- [http-nio-8080-exec-5] c.e.d.m.UserMapper.readAuthorities : <==        Row: ROLE_ADMIN 
+11:32:37.235 TRACE --- [http-nio-8080-exec-5] c.e.d.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+11:32:37.235 DEBUG --- [http-nio-8080-exec-5] c.e.d.m.UserMapper.readAuthorities : <==      Total: 2 
+11:32:37.328 DEBUG --- [http-nio-8080-exec-6] c.e.demo.controller.TestController : 디버그입니다. 
+11:32:37.328 INFO  --- [http-nio-8080-exec-6] c.e.demo.controller.TestController : 인포입니다. 
+11:32:44.347 DEBUG --- [http-nio-8080-exec-8] c.e.demo.controller.TestController : 디버그입니다. 
+11:32:44.347 INFO  --- [http-nio-8080-exec-8] c.e.demo.controller.TestController : 인포입니다. 
+11:32:48.133 DEBUG --- [http-nio-8080-exec-10] c.e.demo.controller.TestController : 디버그입니다. 
+11:32:48.133 INFO  --- [http-nio-8080-exec-10] c.e.demo.controller.TestController : 인포입니다. 
+11:32:51.902 DEBUG --- [http-nio-8080-exec-2] c.e.demo.controller.TestController : 디버그입니다. 
+11:32:51.902 INFO  --- [http-nio-8080-exec-2] c.e.demo.controller.TestController : 인포입니다. 
+11:32:58.696 DEBUG --- [http-nio-8080-exec-4] c.e.demo.mapper.UserMapper.readUser : ==>  Preparing: SELECT u_id as username, u_password as password, u_name as uName, u_isAccountNonExpired as isAccountNonExpired, u_isAccountNonLocked as isAccountNonLocked, u_isCredentialNonExpired as isCredentialsNonExpired, u_isEnabled as isEnabled FROM lc_user WHERE 1=1 AND u_id = ? 
+11:32:58.697 DEBUG --- [http-nio-8080-exec-4] c.e.demo.mapper.UserMapper.readUser : ==> Parameters: b(String) 
+11:32:58.699 TRACE --- [http-nio-8080-exec-4] c.e.demo.mapper.UserMapper.readUser : <==    Columns: username, password, uName, isAccountNonExpired, isAccountNonLocked, isCredentialsNonExpired, isEnabled 
+11:32:58.699 TRACE --- [http-nio-8080-exec-4] c.e.demo.mapper.UserMapper.readUser : <==        Row: b, $2a$10$uBCmNw3vLyiazugEQ2gi4ugdtH9Ss8MN6KfJ9GuTvAOF7JtVwZQ6G, 비비, 1, 1, 1, 1 
+11:32:58.700 DEBUG --- [http-nio-8080-exec-4] c.e.demo.mapper.UserMapper.readUser : <==      Total: 1 
+11:32:58.701 DEBUG --- [http-nio-8080-exec-4] c.e.d.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+11:32:58.701 DEBUG --- [http-nio-8080-exec-4] c.e.d.m.UserMapper.readAuthorities : ==> Parameters: b(String) 
+11:32:58.702 TRACE --- [http-nio-8080-exec-4] c.e.d.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+11:32:58.702 TRACE --- [http-nio-8080-exec-4] c.e.d.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+11:32:58.702 DEBUG --- [http-nio-8080-exec-4] c.e.d.m.UserMapper.readAuthorities : <==      Total: 1 
+11:32:58.841 DEBUG --- [http-nio-8080-exec-5] c.e.demo.controller.TestController : 디버그입니다. 
+11:32:58.841 INFO  --- [http-nio-8080-exec-5] c.e.demo.controller.TestController : 인포입니다. 
+11:33:06.464 DEBUG --- [http-nio-8080-exec-7] c.e.demo.controller.TestController : 디버그입니다. 
+11:33:06.465 INFO  --- [http-nio-8080-exec-7] c.e.demo.controller.TestController : 인포입니다. 
+11:33:07.485 DEBUG --- [http-nio-8080-exec-9] c.e.demo.controller.TestController : 디버그입니다. 
+11:33:07.486 INFO  --- [http-nio-8080-exec-9] c.e.demo.controller.TestController : 인포입니다. 
+11:33:12.815 DEBUG --- [http-nio-8080-exec-1] c.e.demo.mapper.UserMapper.readUser : ==>  Preparing: SELECT u_id as username, u_password as password, u_name as uName, u_isAccountNonExpired as isAccountNonExpired, u_isAccountNonLocked as isAccountNonLocked, u_isCredentialNonExpired as isCredentialsNonExpired, u_isEnabled as isEnabled FROM lc_user WHERE 1=1 AND u_id = ? 
+11:33:12.816 DEBUG --- [http-nio-8080-exec-1] c.e.demo.mapper.UserMapper.readUser : ==> Parameters: dsaf(String) 
+11:33:12.818 DEBUG --- [http-nio-8080-exec-1] c.e.demo.mapper.UserMapper.readUser : <==      Total: 0 
+11:33:12.819 DEBUG --- [http-nio-8080-exec-1] c.e.d.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+11:33:12.819 DEBUG --- [http-nio-8080-exec-1] c.e.d.m.UserMapper.readAuthorities : ==> Parameters: dsaf(String) 
+11:33:12.820 DEBUG --- [http-nio-8080-exec-1] c.e.d.m.UserMapper.readAuthorities : <==      Total: 0 
+11:33:12.821 ERROR --- [http-nio-8080-exec-1] o.s.s.w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user. 
+org.springframework.security.authentication.InternalAuthenticationServiceException: Cannot invoke "com.example.demo.domain.User.setAuthorities(java.util.Collection)" because "user" is null
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:122)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:133)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:201)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:85)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:231)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.example.demo.domain.User.setAuthorities(java.util.Collection)" because "user" is null
+	at com.example.demo.service.UserServiceImpl.loadUserByUsername(UserServiceImpl.java:22)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:107)
+	... 65 common frames omitted
+11:33:57.353 INFO  --- [restartedMain] com.example.demo.DemoApplication : Starting DemoApplication using Java 22.0.1 with PID 7490 (/Users/rngooqw/Documents/ij/demo/build/classes/java/main started by rngooqw in /Users/rngooqw/Documents/ij/demo) 
+11:33:57.354 DEBUG --- [restartedMain] com.example.demo.DemoApplication : Running with Spring Boot v3.3.0, Spring v6.1.8 
+11:33:57.354 INFO  --- [restartedMain] com.example.demo.DemoApplication : No active profile set, falling back to 1 default profile: "default" 
+11:33:58.272 INFO  --- [restartedMain] com.example.demo.DemoApplication : Started DemoApplication in 1.191 seconds (process running for 1.363) 
+11:34:06.231 DEBUG --- [http-nio-8080-exec-3] c.e.demo.mapper.UserMapper.readUser : ==>  Preparing: SELECT u_id as username, u_password as password, u_name as uName, u_isAccountNonExpired as isAccountNonExpired, u_isAccountNonLocked as isAccountNonLocked, u_isCredentialNonExpired as isCredentialsNonExpired, u_isEnabled as isEnabled FROM lc_user WHERE 1=1 AND u_id = ? 
+11:34:06.241 DEBUG --- [http-nio-8080-exec-3] c.e.demo.mapper.UserMapper.readUser : ==> Parameters: abcd(String) 
+11:34:06.262 TRACE --- [http-nio-8080-exec-3] c.e.demo.mapper.UserMapper.readUser : <==    Columns: username, password, uName, isAccountNonExpired, isAccountNonLocked, isCredentialsNonExpired, isEnabled 
+11:34:06.262 TRACE --- [http-nio-8080-exec-3] c.e.demo.mapper.UserMapper.readUser : <==        Row: abcd, $2a$10$1bJUU7ubm3p69ilxXJLrb.rJUO93KCb7zk5SIr.vFqW.mr3HOBJ2q, abcd, 1, 1, 1, 1 
+11:34:06.263 DEBUG --- [http-nio-8080-exec-3] c.e.demo.mapper.UserMapper.readUser : <==      Total: 1 
+11:34:06.266 DEBUG --- [http-nio-8080-exec-3] c.e.d.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+11:34:06.266 DEBUG --- [http-nio-8080-exec-3] c.e.d.m.UserMapper.readAuthorities : ==> Parameters: abcd(String) 
+11:34:06.267 TRACE --- [http-nio-8080-exec-3] c.e.d.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+11:34:06.267 TRACE --- [http-nio-8080-exec-3] c.e.d.m.UserMapper.readAuthorities : <==        Row: ROLE_ADMIN 
+11:34:06.267 TRACE --- [http-nio-8080-exec-3] c.e.d.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+11:34:06.267 DEBUG --- [http-nio-8080-exec-3] c.e.d.m.UserMapper.readAuthorities : <==      Total: 2 
+11:34:06.368 DEBUG --- [http-nio-8080-exec-4] c.e.demo.controller.TestController : 디버그입니다. 
+11:34:06.368 INFO  --- [http-nio-8080-exec-4] c.e.demo.controller.TestController : 인포입니다. 

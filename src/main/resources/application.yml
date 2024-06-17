@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: demo
+  mvc:
+    view:
+      prefix: "/WEB-INF/views"
+      suffix: ".jsp"
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/lc
+    username: root
+    password: 1234
+
+server:
+  port: 8080
+  tomcat:
+    file-encoding: UTF-8
+
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+    jsp:
+      init-parameters:
+        development: true
+  error:
+    whitelabel:
+      enabled: false
+
+mybatis:
+  type-aliases-package: com.example.demo.domain
+  mapper-locations: mapper/**/*.xml
+
+devtools:
+  livereload:
+    enabled: true
+
+logging:
+  config: classpath:logback-spring.xml
